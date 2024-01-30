@@ -7,7 +7,7 @@ Aqui listarei todos os eventos possiveis
 ```json
 {
   "type": "EVENT_TYPE",
-  "personId": "f81ac9d2-f365-4254-a374-6vd2bb337e16",
+  "person_id": "f81ac9d2-f365-4254-a374-6vd2bb337e16",
   "datetime": "2024-01-23T14:45Z"
 }
 ```
@@ -20,7 +20,7 @@ Aqui listarei todos os eventos possiveis
 [
   {
     "type": "PERSON_TRACKING",
-    "personId": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
+    "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45Z",
     "action": "CAME_IN",
     "local": "home",
@@ -28,7 +28,7 @@ Aqui listarei todos os eventos possiveis
   },
   {
     "type": "PERSON_TRACKING",
-    "personId": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
+    "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45Z",
     "action": "WENT_OUT",
     "local": "work",
@@ -36,7 +36,7 @@ Aqui listarei todos os eventos possiveis
   },
   {
     "type": "PERSON_TRACKING",
-    "personId": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
+    "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45Z",
     "action": "REMAINED",
     "local": "gym",
@@ -54,7 +54,7 @@ Aqui listarei todos os eventos possiveis
 ```json
 {
   "type": "EXERCISE",
-  "personId": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
+  "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
   "datetime": "2024-01-23T14:45Z",
   "typeExercise": "RACE",
   "detail": {
