@@ -57,6 +57,7 @@ Aqui listarei todos os eventos possiveis
   "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
   "datetime": "2024-01-23T14:45Z",
   "type_exercise": "RACE",
+  "minutes": 45.55,
   "detail": {
     "origin": "Strava",
     "external_id": "2561523"
