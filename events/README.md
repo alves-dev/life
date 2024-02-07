@@ -59,7 +59,7 @@ Aqui listarei todos os eventos possiveis
   "type_exercise": "RACE",
   "detail": {
     "origin": "Strava",
-    "externalId": "2561523"
+    "external_id": "2561523"
   }
 }
 ```
