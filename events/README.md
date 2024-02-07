@@ -40,7 +40,7 @@ Aqui listarei todos os eventos possiveis
     "datetime": "2024-01-23T14:45Z",
     "action": "REMAINED",
     "local": "gym",
-    "minutes": "45",
+    "minutes": 45,
     "origin": "Home assistant"
   }
 ]
