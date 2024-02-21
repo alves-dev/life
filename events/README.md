@@ -8,7 +8,7 @@ Aqui listarei todos os eventos possiveis
 {
   "type": "EVENT_TYPE",
   "person_id": "f81ac9d2-f365-4254-a374-6vd2bb337e16",
-  "datetime": "2024-01-23T14:45Z"
+  "datetime": "2024-01-23T14:45-03:00"
 }
 ```
 --------------------------------------------------------------
@@ -21,7 +21,7 @@ Aqui listarei todos os eventos possiveis
   {
     "type": "PERSON_TRACKING",
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
-    "datetime": "2024-01-23T14:45Z",
+    "datetime": "2024-01-23T14:45-03:00",
     "action": "CAME_IN",
     "local": "home",
     "origin": "Home assistant"
@@ -29,7 +29,7 @@ Aqui listarei todos os eventos possiveis
   {
     "type": "PERSON_TRACKING",
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
-    "datetime": "2024-01-23T14:45Z",
+    "datetime": "2024-01-23T14:45-03:00",
     "action": "WENT_OUT",
     "local": "work",
     "origin": "Home assistant"
@@ -37,7 +37,7 @@ Aqui listarei todos os eventos possiveis
   {
     "type": "PERSON_TRACKING",
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
-    "datetime": "2024-01-23T14:45Z",
+    "datetime": "2024-01-23T14:45-03:00",
     "action": "REMAINED",
     "local": "gym",
     "minutes": 45,
@@ -55,7 +55,7 @@ Aqui listarei todos os eventos possiveis
 {
   "type": "EXERCISE",
   "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
-  "datetime": "2024-01-23T14:45Z",
+  "datetime": "2024-01-23T14:45-03:00",
   "type_exercise": "RACE",
   "minutes": 45.55,
   "detail": {
