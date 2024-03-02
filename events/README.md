@@ -23,7 +23,7 @@ Aqui listarei todos os eventos possiveis
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45-03:00",
     "action": "CAME_IN",
-    "local": "home",
+    "local": "ACADEMY",
     "origin": "Home assistant"
   },
   {
@@ -31,7 +31,7 @@ Aqui listarei todos os eventos possiveis
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45-03:00",
     "action": "WENT_OUT",
-    "local": "work",
+    "local": "ACADEMY",
     "origin": "Home assistant"
   },
   {
@@ -39,7 +39,7 @@ Aqui listarei todos os eventos possiveis
     "person_id": "f82ac9d8-f165-4254-a374-1ad2bb317e16",
     "datetime": "2024-01-23T14:45-03:00",
     "action": "REMAINED",
-    "local": "gym",
+    "local": "ACADEMY",
     "minutes": 45,
     "origin": "Home assistant"
   }
