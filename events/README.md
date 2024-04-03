@@ -88,7 +88,7 @@ Aqui listarei todos os eventos possiveis
   "type": "FOOD",
   "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
   "datetime": "2024-01-23T14:45-03:00",
-  "measure": "arroz",
+  "food": "arroz",
   "weight": 200
 }
 ```
