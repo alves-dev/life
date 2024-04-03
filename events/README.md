@@ -65,3 +65,44 @@ Aqui listarei todos os eventos possiveis
 }
 ```
 --------------------------------------------------------------
+
+
+<a id="medidas"></a>
+#### MEDIDAS CORPORAIS: *routing_key* -> _body_measurements_
+```json
+{
+  "type": "BODY_MEASUREMENTS",
+  "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
+  "datetime": "2024-01-23T14:45-03:00",
+  "measure": "peso",
+  "value": 67.5
+}
+```
+--------------------------------------------------------------
+
+
+<a id="alimentacao"></a>
+#### ALIMENTAÇÃO: *routing_key* -> _food_
+```json
+{
+  "type": "FOOD",
+  "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
+  "datetime": "2024-01-23T14:45-03:00",
+  "measure": "arroz",
+  "weight": 200
+}
+```
+- __weight__: em gramas
+
+#### ALIMENTAÇÃO: *routing_key* -> _food_
+```json
+{
+  "type": "LIQUID_FOOD",
+  "person_id": "f81ac9d8-f165-4254-a374-1ad2bb337e16",
+  "datetime": "2024-01-23T14:45-03:00",
+  "liquid": "water",
+  "amount": 200
+}
+```
+- __amount__: Inteiro em ml
+--------------------------------------------------------------
