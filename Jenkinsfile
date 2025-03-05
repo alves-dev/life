@@ -41,10 +41,11 @@ pipeline {
                                                                            keyFileVariable: 'identity',
                                                                            passphraseVariable: '',
                                                                            usernameVariable: 'userName')]) {
-                    remote.user = userName
-                    remote.identityFile = identity
+                        remote.user = userName
+                        remote.identityFile = identity
 
-                    sshCommand remote: remote, command: 'echo "Executando no host via SSH"; ls -la /home'
+                        sshCommand remote: remote, command: 'echo "Executando no host via SSH"; ls -la /home'
+                    }
                 }
             }
         }
