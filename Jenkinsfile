@@ -31,13 +31,20 @@ pipeline {
 //         }
         stage('SSH') {
             steps {
-                sshCommand remote: [
-                    name: 'meu-servidor',
-                    host: '192.168.12.100',
-                    user: 'alves-dev',
-                    credentialsId: 'meu-servidor-ssh',
-                    allowAnyHosts: true
-                ], command: 'echo "Executando no host via SSH"; ls -la /home'
+                script {
+                    def remote = [
+                                        name: 'meu-servidor',
+                                        host: '192.168.12.100',  // Use IP ou nome do host resolvível
+                                        allowAnyHosts: true
+                                    ]
+                    withCredentials([sshUserPrivateKey(credentialsId: 'meu-servidor-ssh',
+                                                                           keyFileVariable: 'identity',
+                                                                           passphraseVariable: '',
+                                                                           usernameVariable: 'userName')]) {
+                    remote.user = userName
+                    remote.identityFile = identity
+
+                sshCommand remote: remote, command: 'echo "Executando no host via SSH"; ls -la /home'
             }
         }
 
