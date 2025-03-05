@@ -31,8 +31,12 @@ pipeline {
         }
         stage('SSH') {
             steps {
-                sshCommand remote: 'sever01.alves-dev.com',
-                    command: 'echo "Executando no host via SSH"; ls -la /home'
+                sshCommand remote: [
+                    name: 'meu-servidor',
+                    host: 'sever01.alves-dev.com',
+                    user: 'alves-dev',
+                    credentialsId: 'meu-servidor-ssh'
+                ], command: 'echo "Executando no host via SSH"; ls -la /home'
             }
         }
 
