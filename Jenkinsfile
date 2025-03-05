@@ -18,17 +18,17 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        stage('Build 2') {
-            agent {
-                docker {
-                    image 'gradle:8.2.0-jdk17-alpine'
-                    reuseNode true
-                }
-            }
-            steps {
-                sh 'gradle --version'
-            }
-        }
+//         stage('Build 2') {
+//             agent {
+//                 docker {
+//                     image 'gradle:8.2.0-jdk17-alpine'
+//                     reuseNode true
+//                 }
+//             }
+//             steps {
+//                 sh 'gradle --version'
+//             }
+//         }
         stage('SSH') {
             steps {
                 sshCommand remote: [
