@@ -29,5 +29,13 @@ pipeline {
                 sh 'gradle --version'
             }
         }
+        stages {
+            stage('SSH') {
+                steps {
+                    sshCommand remote: 'sever01.alves-dev.com',
+                    command: 'echo "Executando no host via SSH"; ls -la /home'
+                }
+            }
+        }
     }
 }
