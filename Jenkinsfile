@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sshCommand remote: [
                     name: 'meu-servidor',
-                    host: 'sever01.alves-dev.com',
+                    host: 'server01.alves-dev.com',
                     user: 'alves-dev',
                     credentialsId: 'meu-servidor-ssh',
                     allowAnyHosts: true
