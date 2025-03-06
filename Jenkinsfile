@@ -34,7 +34,7 @@ pipeline {
                 script {
                     def remote = [
                         name: 'Server 01',
-                        host: '192.168.12.100',  // Use IP ou nome do host resolvível
+                        host: env.SERVER_01_IP,
                         allowAnyHosts: true
                     ]
 
