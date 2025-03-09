@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
                 echo 'Testing..'
@@ -18,7 +13,7 @@ pipeline {
                 sh 'ls -la'
             }
         }
-        stage('Build 2') {
+        stage('Build') {
             agent {
                 docker {
                     image 'gradle:8.2.0-jdk17-alpine'
